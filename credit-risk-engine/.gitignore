@@ -12,3 +12,4 @@ ENV/
 
 # Environment Variables & Secrets
 .env
+.streamlit/secrets.toml

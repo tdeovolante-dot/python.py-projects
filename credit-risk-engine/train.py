@@ -12,8 +12,14 @@ __title__ = "Grade 12 Scholar & Prospective Actuarial Science Student"
 __version__ = "2.0.0"
 __maintainer__ = "Lethabo Tsoeute"
 
+import os
+import pathlib
 from importlib import import_module
 from datetime import datetime
+
+# Set working directory to this file's location for reliable relative paths
+_APP_DIR = pathlib.Path(__file__).resolve().parent
+os.chdir(_APP_DIR)
 
 # 1. DEPENDENCY CHECKS
 try:
